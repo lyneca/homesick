@@ -251,3 +251,15 @@ pre > code {
     border: 1px solid #999999;
     border-radius: 3px;
 }
+
+.date {
+    text-align: center;
+    color: #444444;
+}
+
+.date::before, .date::after {
+    content: "#";
+    margin: 0 10px;
+    font-family: "Inconsolata";
+    color: #999999;
+}
