@@ -24,6 +24,11 @@ p {
     page-break-inside: avoid;
 }
 
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #3333BB;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -47,19 +52,9 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 26px;
     page-break-after: avoid;
 }
-
-/* h2:before { */
-    /* content: "-- "; */
-    /* color: #999999; */
-/* } */
-
-/* h2:after { */
-    /* content: " --"; */
-    /* color: #999999; */
-/* } */
 
 .author {
     text-align: center;
@@ -100,6 +95,15 @@ h2 {
     margin: auto;
 }
 
+blockquote {
+    margin-left: 20px;
+    font-style: italic;
+    color: #444444;
+    background-color: transparent;
+    padding-left: 10px;
+    border-left: 3px solid #dddddd;
+}
+
 h3 {
     font-size: 22px;
 }
@@ -113,28 +117,33 @@ h3:before {
 h4 {
     color: #333333;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h4:before {
     content: "/// ";
     font-family: "Inconsolata";
     color: #999999;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h5 {
     font-size: 17px;
+    color: #333333;
 }
 
-h5:before {
-    content: "[ ";
-    color: #999999;
+h6 {
+    font-size: 16px;
+    font-style: italic;
+    color: #444444;
 }
 
-h5:after {
-    content: " ]";
-    color: #999999;
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-style: italic;
 }
 
 ul {
@@ -175,9 +184,6 @@ table {
     page-break-inside: avoid;
     table-layout: auto;
     box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5);
-}
-
-table {
     border: 1px solid #cccccc;
     border-radius: 5px !important;
     border-collapse: collapse;
@@ -217,4 +223,31 @@ pre > code {
     background-color: transparent;
     padding: 0;
     border-radius: 0;
+}
+
+.info {
+    background-color: #d9edf7;
+    border: 1px solid #bce8f1;;
+    border-radius: 5px;
+    width: 80%;
+    padding: 15px;
+    color: #31708f;
+    margin: auto;
+}
+
+.info > p {
+    margin: 0;
+}
+
+.dot {
+    width: auto;
+    height: auto;
+}
+
+.boxed {
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    border-radius: 3px;
 }
